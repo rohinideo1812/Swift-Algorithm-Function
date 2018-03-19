@@ -1,16 +1,18 @@
-//
-//  Utility.swift
-//  Anagram
-//
-//  Created by BridgeLabz on 16/03/18.
-//  Copyright © 2018 BridgeLabz. All rights reserved.
-//
+/******************************************************************************
+ *  Purpose: Determines whether the entered string is anagram or not
+ *
+ *  @author Rohini
+ *  @version 4.0
+ *  @since   15-03-2018
+ *
+ ******************************************************************************/
+
 
 import Foundation
 class Utility{
     func acceptinput()->String{
         if let input=readLine(){
-            if let value=Int(input){
+            if Int(input) != nil{
                 print("Enter integer value")
             }
             else{

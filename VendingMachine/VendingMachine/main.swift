@@ -1,24 +1,29 @@
-//
-//  main.swift
-//  VendingMachine
-//
-//  Created by BridgeLabz on 15/03/18.
-//  Copyright © 2018 BridgeLabz. All rights reserved.
-//
+/******************************************************************************
+ *  Purpose: Determines the minimum numbers of notes given to user by machine after entering amount
+ *
+ *  @author Rohini
+ *  @version 4.0
+ *  @since   15-03-2018
+ *
+ ******************************************************************************/
 
 import Foundation
 var utility:Utility=Utility()
 print("Enter the amount")
 var amount=utility.acceptinput()
-var array:[Int] = [1,2,5,10,50,100,500,1000]
-var count1 = 0
-for element in array{
-    if  amount<=element{
-        amount = amount - element
-        print(element)
-        count1+=1
+var array:[Int] = [1000,500,100,50,10,5,2,1]
+var noteCount = 0
+while amount>0{
+    for i in 0...array.count-1{
+        if (amount>=array[i]){
+            amount-=array[i]
+            print(array[i])
+            noteCount+=1
+            break
+        }
     }
+    
 }
-print(count1)
+print("\nNumber of notes = \(noteCount)")
 
 

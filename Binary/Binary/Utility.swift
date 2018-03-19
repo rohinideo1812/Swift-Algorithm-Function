@@ -1,10 +1,12 @@
-//
-//  Utility.swift
-//  Binary
-//
-//  Created by BridgeLabz on 16/03/18.
-//  Copyright © 2018 BridgeLabz. All rights reserved.
-//
+/******************************************************************************
+ *  Purpose: Determines the buinary value of a entered decimal value
+ *
+ *  @author Rohini
+ *  @version 4.0
+ *  @since   15-03-2018
+ *
+ ******************************************************************************/
+
 
 import Foundation
 class Utility{
@@ -22,6 +24,7 @@ class Utility{
     }
     
     func calculatebinary(number:Int){
+       // var str = ""
     var result = 0,number1 = number,remainder = 0,string=""
         while number1 != 0{
             remainder = number1 % 2
@@ -35,6 +38,7 @@ class Utility{
             if c == "1"{
             result = (1 * Int(pow(Double(2),Double(j))))
             print("\(result)")
+    
             j -= 1
         }
             else{
@@ -43,6 +47,8 @@ class Utility{
             }
 
         }
+        
+      
 
     
 }

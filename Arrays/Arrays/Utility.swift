@@ -19,25 +19,18 @@ class Utility{
         }
         return 0
     }
-    func insertionsort(array: Array<Int>){
-        var temp = 0
-        for i in 1...array.count{
-            temp = array.indexOf(i)
-            for j in 1...array.count{
-                
-            }
-        }
-    }
-}
-//int i, j, temp = 0;
-//for (i = 1; i < length; i++) {
-//    temp = array[i];
-//    for (j = i - 1; j >= 0 && temp < array[j]; j--)
-//    array[j + 1] = array[j];
-//    array[j + 1] = temp;
+//    func insertionsort(array: Array<Int>){
+//        var temp = 0
+//        for i in 1...array.count{
+//            temp = array[i]
+//            var j = i - 1
+//            while j >= 0 && temp < array[j]{
+//                array[j + 1] = array[j]
 //
-//}
-//for (i = 0; i < length; i++) {
-//    System.out.println(array[i]);
-//}
-
+//            }
+//
+//                array[j + 1] = temp
+//
+//            }
+//        }
+    }

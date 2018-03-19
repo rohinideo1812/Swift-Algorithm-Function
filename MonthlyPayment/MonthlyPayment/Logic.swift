@@ -1,11 +1,12 @@
+/******************************************************************************
+ *  Purpose: Functions for calculations
+ *
+ *  @author Rohini
+ *  @version 4.0
+ *  @since   15-03-2018
+ *
+ ******************************************************************************/
 
-//
-//  Utility.swift
-//  MonthlyPayment
-//
-//  Created by BridgeLabz on 16/03/18.
-//  Copyright © 2018 BridgeLabz. All rights reserved.
-//
 
 import Foundation
 class Utility{

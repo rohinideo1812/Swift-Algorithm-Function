@@ -1,10 +1,11 @@
-//
-//  main.swift
-//  MonthlyPayment
-//
-//  Created by BridgeLabz on 16/03/18.
-//  Copyright © 2018 BridgeLabz. All rights reserved.
-//
+/******************************************************************************
+ *  Purpose: Determines the monthly payment paid by user.
+ *
+ *  @author Rohini
+ *  @version 4.0
+ *  @since   15-03-2018
+ *
+ ******************************************************************************/
 
 import Foundation
 var utility:Utility=Utility()

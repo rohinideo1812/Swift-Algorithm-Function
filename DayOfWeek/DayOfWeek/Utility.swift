@@ -1,10 +1,12 @@
-//
-//  File.swift
-//  DayOfWeek
-//
-//  Created by BridgeLabz on 16/03/18.
-//  Copyright © 2018 BridgeLabz. All rights reserved.
-//
+/******************************************************************************
+ *  Purpose: Determines the day of week when date and time is entered by user
+ *
+ *  @author Rohini
+ *  @version 4.0
+ *  @since   15-03-2018
+ *
+ ******************************************************************************/
+
 
 import Foundation
 class Utility{
@@ -22,10 +24,10 @@ class Utility{
     }
     
     func dayofweek(date:Int,month:Int,year:Int){
-        var yo = Int (year - ((14 - month) / 12))
-        var x = Int (yo + (yo / 4) - (yo / 100) + (yo / 400))
-        var mo = Int(month + (12 * ((14 - month) / 12)) - 2)
-        var dd = Int((date + x + ((31 * mo) / 12)) % 7)
+        let yo = Int (year - ((14 - month) / 12))
+        let x = Int (yo + (yo / 4) - (yo / 100) + (yo / 400))
+        let mo = Int(month + (12 * ((14 - month) / 12)) - 2)
+        let dd = Int((date + x + ((31 * mo) / 12)) % 7)
         switch dd {
         case 0:
             print("Sunday")

@@ -1,10 +1,11 @@
-//
-//  Utility.swift
-//  Arrays
-//
-//  Created by BridgeLabz on 17/03/18.
-//  Copyright © 2018 BridgeLabz. All rights reserved.
-//
+/******************************************************************************
+ *  Purpose: Logic of Insertion Sort
+ *
+ *  @author Rohini
+ *  @version 4.0
+ *  @since   15-03-2018
+ *
+ ******************************************************************************/
 
 import Foundation
 class Utility{
@@ -19,18 +20,20 @@ class Utility{
         }
         return 0
     }
-//    func insertionsort(array: Array<Int>){
-//        var temp = 0
-//        for i in 1...array.count{
-//            temp = array[i]
-//            var j = i - 1
-//            while j >= 0 && temp < array[j]{
-//                array[j + 1] = array[j]
-//
-//            }
-//
-//                array[j + 1] = temp
-//
-//            }
-//        }
+    func insertion(array:[Int]){
+    var array = array
+    var temp = 0
+    for i in 1..<array.count{
+    temp = array[i]
+    var j = i - 1
+    while j >= 0 && temp < array[j]{
+    array[j + 1] = array[j]
+    j -= 1
     }
+    
+    array[j + 1] = temp
+    
+    }
+print("Sorted Array is \(array)")
+}
+}

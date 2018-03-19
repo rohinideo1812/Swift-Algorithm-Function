@@ -18,16 +18,6 @@ for _ in  0..<n{
     array.append(utility.acceptinput())
 }
 print(array)
-var temp = 0
-    for i in 1..<array.count{
-        temp = array[i]
-        var j = i - 1
-        while j >= 0 && temp < array[j]{
-            array[j + 1] = array[j]
-            j -= 1
-        }
+utility.insertion(array: array)
 
-        array[j + 1] = temp
-
-    }
 
